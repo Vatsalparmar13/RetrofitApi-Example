@@ -3,7 +3,7 @@ package com.example.retrofitapi;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class RetrofirInstance {
+public class RetrofitInstance {
 
     private static Retrofit retrofit;
     private static final String BASEURL="https://jsonplaceholder.typicode.com/";

@@ -4,11 +4,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -39,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         }
         getWindow().setStatusBarColor(getResources().getColor(R.color.blue));
 
-        apiInterface=RetrofirInstance.getRetrofit().create(ApiInterface.class);
+        apiInterface= RetrofitInstance.getRetrofit().create(ApiInterface.class);
 
         postrcview=findViewById(R.id.postRecyView);
 
